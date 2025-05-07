@@ -1,0 +1,342 @@
+<!doctype html>
+<html class="no-js" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://jiedianmianfei.github.io/news/article-111331.htm" />
+    <meta charset="utf-8">
+    <!--====== Title ======-->
+    <title>深度解析V2Ray 500错误及其解决方案</title>
+        <meta name="description" content="V2Ray是一款功能强大的代理工具，广泛用于科学上网和隐私保护。它支持多种协议，能够帮助用户绕过网络封锁，保障上网安全。然而，尽管V2Ray在网络自由和隐私保护方面表现卓越，用户在使用过程中依然可能遇" />
+        <link rel="icon" href="/assets/website/img/clashnyanpasu/favicon.ico" type="image/x-icon"/>
+
+    <meta name="author" content="节点免费订阅官网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://jiedianmianfei.github.io/news/article-111331.htm" />
+    <meta property="og:site_name" content="节点免费订阅官网" />
+    <meta property="og:title" content="深度解析V2Ray 500错误及其解决方案" />
+    <meta property="og:image" content="https://jiedianmianfei.github.io/uploads/20240623/001b5484db423153255a794ccbf2a309.webp" />
+        <meta property="og:release_date" content="2025-05-04T09:27:56" />
+    <meta property="og:updated_time" content="2025-05-04T09:27:56" />
+        <meta property="og:description" content="V2Ray是一款功能强大的代理工具，广泛用于科学上网和隐私保护。它支持多种协议，能够帮助用户绕过网络封锁，保障上网安全。然而，尽管V2Ray在网络自由和隐私保护方面表现卓越，用户在使用过程中依然可能遇" />
+        
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--====== Magnific Popup CSS ======-->
+    <link rel="stylesheet" href="/assets/website/css/clashnyanpasu/magnific-popup.css">
+    <!--====== Slick CSS ======-->
+    <link rel="stylesheet" href="/assets/website/css/clashnyanpasu/slick.css">
+    <!--====== Line Icons CSS ======-->
+    <link rel="stylesheet" href="/assets/website/css/clashnyanpasu/LineIcons.css">
+    <!--====== Bootstrap CSS ======-->
+    <link rel="stylesheet" href="/assets/website/css/clashnyanpasu/bootstrap.min.css">
+    <!--====== Default CSS ======-->
+    <link rel="stylesheet" href="/assets/website/css/clashnyanpasu/default.css">
+    <!--====== Style CSS ======-->
+    <link rel="stylesheet" href="/assets/website/css/clashnyanpasu/style.css">
+    <link rel="stylesheet" href="/assets/website/css/G.css" />
+
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="深度解析V2Ray 500错误及其解决方案">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3048315WJD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3048315WJD');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854"
+     crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+        <!--====== PRELOADER PART START ======-->
+    <div class="preloader">
+        <div class="loader">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====== PRELOADER PART ENDS ======-->
+    <!--====== NAVBAR TWO PART START ======-->
+    <section class="navbar-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg">
+                                                <a class="navbar-brand top" href="/">
+                            节点免费                        </a>
+                                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTwo" aria-controls="navbarTwo" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse sub-menu-bar" id="navbarTwo">
+                            <ul class="navbar-nav m-auto">
+                                                                <li class="nav-item"><a href="/">首页</a></li>
+                                                                <li class="nav-item"><a href="/paid-subscribe/">推荐机场</a></li>
+                                                                <li class="nav-item"><a href="/news/">新闻资讯</a></li>
+                                                                <li class="nav-item"><a href="/client.htm">客户端</a></li>
+                                                            </ul>
+                        </div>
+
+                    </nav> <!-- navbar -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+    <!--====== NAVBAR TWO PART ENDS ======-->
+    <!--====== SLIDER PART START ======-->
+    <section id="home" class="slider_area">
+        <div id="carouselThree" class="carousel slide sub-page" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="slider-content">
+                                    <h1 class="title">深度解析V2Ray 500错误及其解决方案</h1>
+                                    <p class="text">
+                                        <a href="/">首页</a> / 
+                                        <a href="/news/">新闻资讯</a> / 
+                                        <span>正文</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div> <!-- row -->
+                    </div> <!-- container -->
+                    <div class="slider-image-box d-none d-lg-flex align-items-end">
+                        <div class="slider-image">
+                            <img src="/assets/website/img/clashnyanpasu/slider/1.png" alt="Hero">
+                        </div> <!-- slider-imgae -->
+                    </div> <!-- slider-imgae box -->
+                </div> <!-- carousel-item -->
+            </div>
+        </div>
+    </section>
+    <!--====== SLIDER PART ENDS ======-->
+    <!--====== ABOUT PART START ======-->
+    <section id=about class=about-area>
+        <div class=container>
+            <div class="row">
+                <div class="col-md-9">
+                                    <input type="hidden" id="share-website-info" data-name="Clash Node官网订阅站" data-url="https://clashnode.github.io">
+                <div class="xcblog-blog-detail xcblog-blog-detail-defined">
+                    
+<p data-start="25" data-end="189" class="">V2Ray是一款功能强大的代理工具，广泛用于科学上网和隐私保护。它支持多种协议，能够帮助用户绕过网络封锁，保障上网安全。然而，尽管V2Ray在网络自由和隐私保护方面表现卓越，用户在使用过程中依然可能遇到一些问题，其中最常见的就是V2Ray 500错误。这类错误通常意味着服务器端发生了意外问题，导致无法完成请求，给用户带来困扰。</p>
+<p data-start="191" data-end="247" class="">本文将深入探讨V2Ray 500错误的原因及其解决方案，帮助用户快速排查和修复该问题，确保V2Ray的顺利使用。</p>
+<h2 data-start="249" data-end="267" class="">什么是V2Ray 500错误？</h2>
+<p data-start="269" data-end="387" class="">V2Ray 500错误是服务器端发生内部错误时返回的一种HTTP状态码。这通常意味着请求无法完成，服务器在处理过程中遇到了未预料到的问题。与其他常见的错误码（如404或403）不同，500错误主要指的是服务器出现了故障，而非客户端问题。</p>
+<p data-start="389" data-end="473" class="">当用户遇到500错误时，通常会发现无法访问所需的资源，或在一段时间后V2Ray突然断开连接并显示错误提示。了解500错误的原因有助于用户有效地解决问题，恢复正常的使用。</p>
+<h2 data-start="475" data-end="494" class="">V2Ray 500错误的产生原因</h2>
+<h3 data-start="496" data-end="510" class="">1. 服务器配置问题</h3>
+<p data-start="512" data-end="646" class="">不当的V2Ray服务器配置是导致500错误的主要原因之一。如果服务器配置文件中存在错误，或没有按需求开启某些端口和服务，那么V2Ray可能会返回500错误。例如，配置文件中代理端口未正确设置，或者传输协议不兼容，都会导致请求无法正确处理，最终导致服务器返回500错误。</p>
+<h3 data-start="648" data-end="659" class="">2. 网络故障</h3>
+<p data-start="661" data-end="779" class="">网络连接的不稳定性也可能导致500错误。在使用V2Ray时，如果用户的网络连接不稳定，可能会导致数据包丢失或延迟，进而引发服务器处理请求时出现错误。此外，临时的网络中断或防火墙的干扰也可能会中断与V2Ray服务器的连接，导致500错误。</p>
+<h3 data-start="781" data-end="795" class="">3. 软件版本不兼容</h3>
+<p data-start="797" data-end="933" class="">V2Ray的更新版本可能与某些服务器或配置不兼容。这种版本不兼容的问题经常发生，特别是当V2Ray升级后，某些协议或功能发生变化时。如果用户的V2Ray版本与服务器端的版本不匹配，可能会出现500错误。在这种情况下，建议检查V2Ray版本，并确保客户端和服务器的版本一致。</p>
+<h3 data-start="935" data-end="951" class="">4. 服务器资源消耗过多</h3>
+<p data-start="953" data-end="1062" class="">当V2Ray服务器的资源（如CPU和内存）被过度占用时，可能会导致500错误。服务器在处理多个请求时，可能因为负载过大而无法及时响应，进而返回500错误。这通常发生在服务器承载量过大，或者某些进程占用过多资源的情况下。</p>
+<h2 data-start="1064" data-end="1077" class="">500错误的具体表现</h2>
+<p data-start="1079" data-end="1109" class="">当用户遇到V2Ray的500错误时，通常会出现以下几种情况：</p>
+<ul data-start="1111" data-end="1269">
+<li data-start="1111" data-end="1165" class="">
+<p data-start="1113" data-end="1165" class=""><strong data-start="1113" data-end="1128">无法正常打开网站或应用</strong>：用户尝试通过V2Ray访问某些网站或应用时，页面无法加载或应用无法启动。</p>
+</li>
+<li data-start="1166" data-end="1220" class="">
+<p data-start="1168" data-end="1220" class=""><strong data-start="1168" data-end="1184">V2Ray安装或更新失败</strong>：在尝试安装或更新V2Ray时，程序可能会因为500错误而无法完成操作。</p>
+</li>
+<li data-start="1221" data-end="1269" class="">
+<p data-start="1223" data-end="1269" class=""><strong data-start="1223" data-end="1233">连接突然断开</strong>：使用一段时间后，V2Ray突然与服务器断开连接，并显示500错误提示。</p>
+</li>
+</ul>
+<h2 data-start="1271" data-end="1289" class="">如何解决V2Ray 500错误</h2>
+<p data-start="1291" data-end="1320" class="">针对V2Ray 500错误，用户可以采取以下几种解决方案：</p>
+<h3 data-start="1322" data-end="1336" class="">1. 检查服务器配置</h3>
+<p data-start="1338" data-end="1449" class="">V2Ray的配置文件是确保服务正常运行的关键。用户应仔细检查配置文件，确保配置正确无误。特别是在配置端口、传输协议和服务器地址时，确保每个设置都符合要求。如果不确定配置是否正确，可以参考V2Ray的官方文档进行对比和修改。</p>
+<ul data-start="1451" data-end="1544">
+<li data-start="1451" data-end="1483" class="">
+<p data-start="1453" data-end="1483" class=""><strong data-start="1453" data-end="1463">检查端口设置</strong>：确认服务器是否按需求开启了相应的端口。</p>
+</li>
+<li data-start="1484" data-end="1544" class="">
+<p data-start="1486" data-end="1544" class=""><strong data-start="1486" data-end="1496">检查协议设置</strong>：检查代理协议（如VMess、Shadowsocks等）是否设置正确，并确保协议与服务器端兼容。</p>
+</li>
+</ul>
+<h3 data-start="1546" data-end="1565" class="">2. 更新或回滚V2Ray版本</h3>
+<p data-start="1567" data-end="1680" class="">有时，V2Ray的更新版本可能与现有的服务器配置不兼容。此时，尝试将V2Ray回滚到先前的版本，看看是否能够解决500错误问题。更新V2Ray到最新版本也是一种有效的解决方案，因为新版本通常修复了之前版本中的漏洞和不兼容问题。</p>
+<p data-start="1682" data-end="1723" class="">此外，定期检查V2Ray的更新并及时安装，可以确保使用的是稳定和兼容性较好的版本。</p>
+<h3 data-start="1725" data-end="1738" class="">3. 测试网络连接</h3>
+<p data-start="1740" data-end="1867" class="">不稳定的网络连接是引发500错误的常见原因之一。用户可以通过一些网络测试工具来检查与V2Ray服务器的连接质量。可以使用ping命令测试延迟，并通过测速工具查看网络的稳定性。如果发现网络质量较差，用户可以尝试更换网络环境，或联系网络提供商以解决连接问题。</p>
+<h3 data-start="1869" data-end="1887" class="">4. 检查服务器资源使用情况</h3>
+<p data-start="1889" data-end="2017" class="">服务器的资源消耗过高也是引发500错误的原因之一。用户应通过系统监控工具（如top命令、htop等）检查服务器的CPU和内存使用情况。如果服务器资源过度占用，可能需要优化应用程序，减少资源消耗，或考虑升级服务器配置，增加更多的CPU和内存来应对更高的负载。</p>
+<h3 data-start="2019" data-end="2035" class="">5. 分析V2Ray日志</h3>
+<p data-start="2037" data-end="2148" class="">V2Ray提供了日志系统，能够记录详细的错误信息。通过查看V2Ray的日志文件，用户可以获得更多的错误提示和关键信息，从而帮助解决500错误。日志中可能会显示错误代码和具体的故障原因，用户可以根据这些信息进行进一步的调试。</p>
+<h2 data-start="2150" data-end="2169" class="">预防V2Ray 500错误的方法</h2>
+<p data-start="2171" data-end="2204" class="">为了降低V2Ray 500错误的发生率，用户可以采取以下预防措施：</p>
+<ul data-start="2206" data-end="2358">
+<li data-start="2206" data-end="2253" class="">
+<p data-start="2208" data-end="2253" class=""><strong data-start="2208" data-end="2221">定期更新V2Ray</strong>：确保V2Ray是最新版本，以减少因软件不兼容或漏洞引发的错误。</p>
+</li>
+<li data-start="2254" data-end="2306" class="">
+<p data-start="2256" data-end="2306" class=""><strong data-start="2256" data-end="2266">备份配置文件</strong>：在修改V2Ray配置文件时，及时备份，以便在出现问题时可以快速恢复到正常状态。</p>
+</li>
+<li data-start="2307" data-end="2358" class="">
+<p data-start="2309" data-end="2358" class=""><strong data-start="2309" data-end="2320">监控服务器资源</strong>：定期监控服务器的CPU、内存和网络状况，及时发现和解决资源消耗过高的问题。</p>
+</li>
+</ul>
+<h2 data-start="2360" data-end="2374" class="">FAQ（常见问题解答）</h2>
+<h3 data-start="2376" data-end="2406" class="">Q1: V2Ray 500错误的具体解决流程是什么？</h3>
+<p data-start="2408" data-end="2433" class="">A1: 解决V2Ray 500错误的常见流程如下：</p>
+<ol data-start="2434" data-end="2516">
+<li data-start="2434" data-end="2448" class="">
+<p data-start="2437" data-end="2448" class="">检查并验证服务器配置。</p>
+</li>
+<li data-start="2449" data-end="2465" class="">
+<p data-start="2452" data-end="2465" class="">更新或回滚V2Ray版本。</p>
+</li>
+<li data-start="2466" data-end="2479" class="">
+<p data-start="2469" data-end="2479" class="">测试并监控网络状态。</p>
+</li>
+<li data-start="2480" data-end="2496" class="">
+<p data-start="2483" data-end="2496" class="">分析服务器负载和资源情况。</p>
+</li>
+<li data-start="2497" data-end="2516" class="">
+<p data-start="2500" data-end="2516" class="">根据日志信息调整配置或进行重试。</p>
+</li>
+</ol>
+<h3 data-start="2518" data-end="2546" class="">Q2: V2Ray 500错误会影响其他用户吗？</h3>
+<p data-start="2548" data-end="2616" class="">A2: 通常，500错误是与特定用户的连接问题有关，通常只会影响单个用户。但如果服务器出现更大的故障，可能会影响所有连接该服务器的用户。</p>
+<h3 data-start="2618" data-end="2647" class="">Q3: 如何应对频繁出现的V2Ray 500错误？</h3>
+<p data-start="2649" data-end="2674" class="">A3: 频繁出现500错误时，用户应适时分析原因：</p>
+<ol data-start="2675" data-end="2751">
+<li data-start="2675" data-end="2702" class="">
+<p data-start="2678" data-end="2702" class="">检查服务器是否过载，是否需要更换更高效的服务器。</p>
+</li>
+<li data-start="2703" data-end="2734" class="">
+<p data-start="2706" data-end="2734" class="">确保V2Ray和所有插件都保持最新版本，减少不兼容问题。</p>
+</li>
+<li data-start="2735" data-end="2751" class="">
+<p data-start="2738" data-end="2751" class="">监控并优化服务器资源配置。</p>
+</li>
+</ol>
+<h2 data-start="2753" data-end="2758" class="">结论</h2>
+<p data-start="2760" data-end="2902" class="">V2Ray 500错误虽然常见，但通过详细的排查和相应的优化措施，大多数问题都能得到解决。无论是配置的精确调整、软件版本的回滚，还是网络质量的优化，都能够帮助用户顺利使用V2Ray，避免500错误的困扰。希望本文的分析和解决方案能帮助您更好地应对V2Ray 500错误，提升网络体验。</p>                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-111329.htm">完全解决Shadowrocket无法登录问题的终极指南</a></p>
+                                        <p>下一个：<a href="/news/article-111983.htm">使用Quantumult X自动化京东签到的完全指南</a></p>
+                                    </div>
+                                </div>
+                <div class="col-md-3">
+                    <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-101297.htm" title="解锁鸿蒙网络新体验：Clash工具全流程配置与使用指南">解锁鸿蒙网络新体验：Clash工具全流程配置与使用指南</a></li>
+                        <li class="py-2"><a href="/news/article-103062.htm" title="全面解析LSJ科学上网：使用教程与配置指南">全面解析LSJ科学上网：使用教程与配置指南</a></li>
+                        <li class="py-2"><a href="/news/article-99741.htm" title="旗鱼浏览器科学上网使用全面指南：解锁全球互联网，安全高效畅游">旗鱼浏览器科学上网使用全面指南：解锁全球互联网，安全高效畅游</a></li>
+                        <li class="py-2"><a href="/news/article-99953.htm" title="安卓WiFi改DNS实现科学上网的详细攻略">安卓WiFi改DNS实现科学上网的详细攻略</a></li>
+                        <li class="py-2"><a href="/news/article-110509.htm" title="如何在Twitter上使用Clash的全面指南">如何在Twitter上使用Clash的全面指南</a></li>
+                        <li class="py-2"><a href="/news/article-107973.htm" title="如何在TP-Link路由器上刷科学上网固件：详细教程与常见问题解答">如何在TP-Link路由器上刷科学上网固件：详细教程与常见问题解答</a></li>
+                        <li class="py-2"><a href="/news/article-99954.htm" title="Clash男鞋全解析：打造男士质感穿搭的必备之选">Clash男鞋全解析：打造男士质感穿搭的必备之选</a></li>
+                        <li class="py-2"><a href="/news/article-100685.htm" title="如何下载并使用 Shadowrocket：详细步骤与配置指南">如何下载并使用 Shadowrocket：详细步骤与配置指南</a></li>
+                        <li class="py-2"><a href="/news/article-111331.htm" title="深度解析V2Ray 500错误及其解决方案">深度解析V2Ray 500错误及其解决方案</a></li>
+                        <li class="py-2"><a href="/news/article-107974.htm" title="自由上网新纪元：V2Ray路由器安装与配置全攻略">自由上网新纪元：V2Ray路由器安装与配置全攻略</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">14</span> <a href="/date/2025-05/" title="2025-05 归档">2025-05</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">24</span> <a href="/date/2025-04/" title="2025-04 归档">2025-04</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+        <!--====== FOOTER PART START ======-->
+    <section class="footer-area footer-dark">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="copyright text-center mt-35">
+                                            <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                        <p class="text">
+                            节点免费订阅官网 版权所有 Powered by WordPress
+                        </p>
+                    </div> <!--  copyright -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+    <!--====== FOOTER PART ENDS ======-->
+    <!--====== BACK TOP TOP PART START ======-->
+    <a href="#" class="back-to-top"><i class="lni lni-chevron-up"></i></a>
+    <!--====== BACK TOP TOP PART ENDS ======-->
+    <!--====== Jquery js ======-->
+    <script src="/assets/website/js/frontend/clashnyanpasu/vendor/jquery-1.12.4.min.js"></script>
+    <script src="/assets/website/js/frontend/clashnyanpasu/vendor/modernizr-3.7.1.min.js"></script>
+    <!--====== Bootstrap js ======-->
+    <script src="/assets/website/js/frontend/clashnyanpasu/popper.min.js"></script>
+    <script src="/assets/website/js/frontend/clashnyanpasu/bootstrap.min.js"></script>
+    <script src="/assets/website/js/frontend/clashnyanpasu/slick.min.js"></script>
+    <script src="/assets/website/js/frontend/clashnyanpasu/jquery.magnific-popup.min.js"></script>
+    <script src="/assets/website/js/frontend/clashnyanpasu/ajax-contact.js"></script>
+    <!--====== Isotope js ======-->
+    <script src="/assets/website/js/frontend/clashnyanpasu/imagesloaded.pkgd.min.js"></script>
+    <script src="/assets/website/js/frontend/clashnyanpasu/isotope.pkgd.min.js"></script>
+    <!--====== Scrolling Nav js ======-->
+    <script src="/assets/website/js/frontend/clashnyanpasu/jquery.easing.min.js"></script>
+    <script src="/assets/website/js/frontend/clashnyanpasu/scrolling-nav.js"></script>
+    <!--====== Main js ======-->
+    <script src="/assets/website/js/frontend/clashnyanpasu/main.js"></script>
+    <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script><script src="/assets/website/js/frontend/G.js"></script>
+</body>
+
+</html>

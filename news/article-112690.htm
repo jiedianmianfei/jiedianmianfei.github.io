@@ -1,0 +1,387 @@
+<!doctype html>
+<html class="no-js" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://jiedianmianfei.github.io/news/article-112690.htm" />
+    <meta charset="utf-8">
+    <!--====== Title ======-->
+    <title>深入掌握 Shadowrocket：详解 UDP 设置与优化全攻略</title>
+        <meta name="description" content="在当今这个高度网络化的时代，隐私保护、网络自由与连接速度已成为用户最为关注的三大问题。面对复杂多变的网络环境，一款强大的网络工具往往能够成为用户的重要助手。Shadowrocket，作为 iOS 系统" />
+        <link rel="icon" href="/assets/website/img/clashnyanpasu/favicon.ico" type="image/x-icon"/>
+
+    <meta name="author" content="节点免费订阅官网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://jiedianmianfei.github.io/news/article-112690.htm" />
+    <meta property="og:site_name" content="节点免费订阅官网" />
+    <meta property="og:title" content="深入掌握 Shadowrocket：详解 UDP 设置与优化全攻略" />
+    <meta property="og:image" content="https://jiedianmianfei.github.io/uploads/20240623/99c5ae045749f50a87b89296f4f4b921.webp" />
+        <meta property="og:release_date" content="2025-05-07T08:54:47" />
+    <meta property="og:updated_time" content="2025-05-07T08:54:47" />
+        <meta property="og:description" content="在当今这个高度网络化的时代，隐私保护、网络自由与连接速度已成为用户最为关注的三大问题。面对复杂多变的网络环境，一款强大的网络工具往往能够成为用户的重要助手。Shadowrocket，作为 iOS 系统" />
+        
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--====== Magnific Popup CSS ======-->
+    <link rel="stylesheet" href="/assets/website/css/clashnyanpasu/magnific-popup.css">
+    <!--====== Slick CSS ======-->
+    <link rel="stylesheet" href="/assets/website/css/clashnyanpasu/slick.css">
+    <!--====== Line Icons CSS ======-->
+    <link rel="stylesheet" href="/assets/website/css/clashnyanpasu/LineIcons.css">
+    <!--====== Bootstrap CSS ======-->
+    <link rel="stylesheet" href="/assets/website/css/clashnyanpasu/bootstrap.min.css">
+    <!--====== Default CSS ======-->
+    <link rel="stylesheet" href="/assets/website/css/clashnyanpasu/default.css">
+    <!--====== Style CSS ======-->
+    <link rel="stylesheet" href="/assets/website/css/clashnyanpasu/style.css">
+    <link rel="stylesheet" href="/assets/website/css/G.css" />
+
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="深入掌握 Shadowrocket：详解 UDP 设置与优化全攻略">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3048315WJD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3048315WJD');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854"
+     crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+        <!--====== PRELOADER PART START ======-->
+    <div class="preloader">
+        <div class="loader">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====== PRELOADER PART ENDS ======-->
+    <!--====== NAVBAR TWO PART START ======-->
+    <section class="navbar-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg">
+                                                <a class="navbar-brand top" href="/">
+                            节点免费                        </a>
+                                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTwo" aria-controls="navbarTwo" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse sub-menu-bar" id="navbarTwo">
+                            <ul class="navbar-nav m-auto">
+                                                                <li class="nav-item"><a href="/">首页</a></li>
+                                                                <li class="nav-item"><a href="/paid-subscribe/">推荐机场</a></li>
+                                                                <li class="nav-item"><a href="/news/">新闻资讯</a></li>
+                                                                <li class="nav-item"><a href="/client.htm">客户端</a></li>
+                                                            </ul>
+                        </div>
+
+                    </nav> <!-- navbar -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+    <!--====== NAVBAR TWO PART ENDS ======-->
+    <!--====== SLIDER PART START ======-->
+    <section id="home" class="slider_area">
+        <div id="carouselThree" class="carousel slide sub-page" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="slider-content">
+                                    <h1 class="title">深入掌握 Shadowrocket：详解 UDP 设置与优化全攻略</h1>
+                                    <p class="text">
+                                        <a href="/">首页</a> / 
+                                        <a href="/news/">新闻资讯</a> / 
+                                        <span>正文</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div> <!-- row -->
+                    </div> <!-- container -->
+                    <div class="slider-image-box d-none d-lg-flex align-items-end">
+                        <div class="slider-image">
+                            <img src="/assets/website/img/clashnyanpasu/slider/1.png" alt="Hero">
+                        </div> <!-- slider-imgae -->
+                    </div> <!-- slider-imgae box -->
+                </div> <!-- carousel-item -->
+            </div>
+        </div>
+    </section>
+    <!--====== SLIDER PART ENDS ======-->
+    <!--====== ABOUT PART START ======-->
+    <section id=about class=about-area>
+        <div class=container>
+            <div class="row">
+                <div class="col-md-9">
+                                    <input type="hidden" id="share-website-info" data-name="Clash Node官网订阅站" data-url="https://clashnode.github.io">
+                <div class="xcblog-blog-detail xcblog-blog-detail-defined">
+                    
+<p data-start="37" data-end="271" class="">在当今这个高度网络化的时代，隐私保护、网络自由与连接速度已成为用户最为关注的三大问题。面对复杂多变的网络环境，一款强大的网络工具往往能够成为用户的重要助手。Shadowrocket，作为 iOS 系统上一款深受欢迎的网络代理工具，不仅以其丰富的功能赢得用户青睐，更因其对 UDP 支持的灵活配置能力，为追求更高网络效率的人群提供了解决方案。本文将全面解析 Shadowrocket 的 UDP 设置方法，从原理讲解到实操指导，再到性能优化，助您实现从入门到进阶的跨越。</p>
+<hr data-start="273" data-end="276" class="" style="">
+<h2 data-start="278" data-end="295" class="">UDP 是什么？为什么重要？</h2>
+<p data-start="297" data-end="456" class="">UDP，全称 <strong data-start="304" data-end="339">用户数据报协议（User Datagram Protocol）</strong>，是与 TCP（传输控制协议）并列的核心网络协议之一。不同于 TCP 的“连接导向”和数据完整性保障机制，UDP 更加轻量、传输快速，适用于那些对<strong data-start="412" data-end="423">实时性要求极高</strong>的场景，比如在线视频、VoIP（网络电话）、在线游戏和直播推流等。</p>
+<p data-start="458" data-end="560" class="">UDP 不会对数据包进行顺序校验或重发机制，这意味着数据传输过程中的任何丢包都不会被自动纠正。因此，虽然可靠性略逊于 TCP，但也正因为这一“去冗余机制”，UDP 的传输速度在某些应用场景下具有明显优势。</p>
+<p data-start="562" data-end="637" class="">对于使用 Shadowrocket 的用户而言，正确设置 UDP 可以有效提升整体网络的响应速度和通信质量，尤其在面对高频数据交互的场景时，优势显著。</p>
+<hr data-start="639" data-end="642" class="" style="">
+<h2 data-start="644" data-end="680" class="">为什么在 Shadowrocket 中配置 UDP 设置如此关键？</h2>
+<p data-start="682" data-end="753" class="">在常见的网络使用场景中，比如翻墙浏览、观看流媒体或参与在线对战，UDP 协议往往被大量使用。但如果未正确配置 UDP，在连接过程中可能会遇到：</p>
+<ul data-start="755" data-end="808">
+<li data-start="755" data-end="769" class="" style="">
+<p data-start="757" data-end="769" class="">延迟明显高于正常水准</p>
+</li>
+<li data-start="770" data-end="785" class="" style="">
+<p data-start="772" data-end="785" class="">实时应用频繁卡顿或断线</p>
+</li>
+<li data-start="786" data-end="808" class="" style="">
+<p data-start="788" data-end="808" class="">某些服务（如 VoIP）直接无法连接</p>
+</li>
+</ul>
+<p data-start="810" data-end="887" class="">而 Shadowrocket 允许用户通过自定义代理规则、开启 UDP 转发和设置 DNS 优化网络行为，使其成为一个能“充分释放 UDP 性能”的工具。</p>
+<hr data-start="889" data-end="892" class="" style="">
+<h2 data-start="894" data-end="919" class="">Shadowrocket UDP 配置全流程</h2>
+<h3 data-start="921" data-end="947" class="">第一步：获取并安装 Shadowrocket</h3>
+<p data-start="949" data-end="1072" class="">前往 <strong data-start="952" data-end="971">Apple App Store</strong> 搜索并下载 Shadowrocket。如果因地区限制无法搜索到，可访问 Shadowrocket 的官方页面或使用 TestFlight 获取最新版安装包。安装完成后，打开应用，按照提示完成基础配置。</p>
+<blockquote data-start="1074" data-end="1149">
+<p data-start="1076" data-end="1149" class=""><strong data-start="1076" data-end="1084">温馨提示</strong>：因 Shadowrocket 涉及网络代理功能，部分地区的 Apple ID 可能不支持直接下载，建议使用非中国区账户登录获取。</p>
+</blockquote>
+<hr data-start="1151" data-end="1154" class="" style="">
+<h3 data-start="1156" data-end="1170" class="">第二步：添加代理配置</h3>
+<p data-start="1172" data-end="1211" class="">点击主界面右上角的 <strong data-start="1182" data-end="1189">“+”</strong> 按钮，添加新的代理节点。支持多种添加方式：</p>
+<ul data-start="1213" data-end="1260">
+<li data-start="1213" data-end="1230" class="" style="">
+<p data-start="1215" data-end="1230" class="">手动输入服务器信息（推荐）</p>
+</li>
+<li data-start="1231" data-end="1246" class="" style="">
+<p data-start="1233" data-end="1246" class="">从订阅链接批量导入配置</p>
+</li>
+<li data-start="1247" data-end="1260" class="" style="">
+<p data-start="1249" data-end="1260" class="">局域网自动扫描节点</p>
+</li>
+</ul>
+<p data-start="1262" data-end="1269" class="">输入信息包括：</p>
+<ul data-start="1271" data-end="1362">
+<li data-start="1271" data-end="1321" class="" style="">
+<p data-start="1273" data-end="1321" class="">类型（推荐使用 ShadowsocksR、Vmess、Trojan 等支持 UDP 的协议）</p>
+</li>
+<li data-start="1322" data-end="1339" class="" style="">
+<p data-start="1324" data-end="1339" class="">服务器地址（IP 或域名）</p>
+</li>
+<li data-start="1340" data-end="1354" class="" style="">
+<p data-start="1342" data-end="1354" class="">端口、加密方式、密码</p>
+</li>
+<li data-start="1355" data-end="1362" class="" style="">
+<p data-start="1357" data-end="1362" class="">备注名</p>
+</li>
+</ul>
+<p data-start="1364" data-end="1422" class=""><strong data-start="1364" data-end="1370">重点</strong>：确认所使用的代理协议和服务端已启用 UDP 支持，部分服务默认关闭 UDP，需要在服务端进行开启配置。</p>
+<hr data-start="1424" data-end="1427" class="" style="">
+<h3 data-start="1429" data-end="1448" class="">第三步：配置 UDP 支持参数</h3>
+<p data-start="1450" data-end="1476" class="">在代理配置页面中，找到相关选项，确保以下设置已开启：</p>
+<ul data-start="1478" data-end="1629">
+<li data-start="1478" data-end="1534" class="" style="">
+<p data-start="1480" data-end="1534" class="">✅ <strong data-start="1482" data-end="1503">UDP 转发（UDP Relay）</strong>：必须开启，否则所有 UDP 请求将被直接丢弃或无法转发。</p>
+</li>
+<li data-start="1535" data-end="1584" class="" style="">
+<p data-start="1537" data-end="1584" class="">✅ <strong data-start="1539" data-end="1550">IPv6 支持</strong>：如果您的网络支持 IPv6，可同步开启，提高兼容性和连接质量。</p>
+</li>
+<li data-start="1585" data-end="1629" class="" style="">
+<p data-start="1587" data-end="1629" class="">✅ <strong data-start="1589" data-end="1606">开启 Keep-Alive</strong>：保持连接存活，降低连接建立频率，提升稳定性。</p>
+</li>
+</ul>
+<p data-start="1631" data-end="1682" class="">一些服务提供商还会提供额外参数，例如 MTU、混淆协议或 DNS 优化策略，建议根据官方说明进行配置。</p>
+<hr data-start="1684" data-end="1687" class="" style="">
+<h3 data-start="1689" data-end="1710" class="">第四步：测试 UDP 功能是否正常</h3>
+<p data-start="1712" data-end="1766" class="">完成上述设置后，返回主界面，选择刚刚创建的代理节点并启用。此时，可以通过以下方式验证 UDP 是否工作正常：</p>
+<ol data-start="1768" data-end="1904">
+<li data-start="1768" data-end="1813" class="" style="">
+<p data-start="1771" data-end="1813" class="">使用 UDP 检测工具（如：Simple UDP Tester）进行数据回传测试</p>
+</li>
+<li data-start="1814" data-end="1861" class="" style="">
+<p data-start="1817" data-end="1861" class="">启动使用 UDP 协议的应用（如：《原神》、Zoom、Skype 等），观察连接质量</p>
+</li>
+<li data-start="1862" data-end="1904" class="" style="">
+<p data-start="1865" data-end="1904" class="">在 Shadowrocket 的“日志”功能中查看数据流是否包含 UDP 报文</p>
+</li>
+</ol>
+<p data-start="1906" data-end="1933" class="">如果测试显示 UDP 不通或异常，请依次检查以下项目：</p>
+<ul data-start="1935" data-end="2009">
+<li data-start="1935" data-end="1962" class="" style="">
+<p data-start="1937" data-end="1962" class="">节点服务器是否支持 UDP（部分节点限制端口）</p>
+</li>
+<li data-start="1963" data-end="1985" class="" style="">
+<p data-start="1965" data-end="1985" class="">本地网络（如校园网）是否屏蔽 UDP</p>
+</li>
+<li data-start="1986" data-end="2009" class="" style="">
+<p data-start="1988" data-end="2009" class="">设置中是否勾选了“禁止 UDP 转发”选项</p>
+</li>
+</ul>
+<hr data-start="2011" data-end="2014" class="" style="">
+<h2 data-start="2016" data-end="2036" class="">性能优化建议：让 UDP 飞得更快</h2>
+<p data-start="2038" data-end="2084" class="">即便开启了 UDP，也不代表体验已经最优。以下几个建议可显著提升实际使用中的 UDP 表现：</p>
+<h3 data-start="2086" data-end="2104" class="">1. 选择地理位置更近的节点</h3>
+<p data-start="2106" data-end="2162" class="">节点与用户物理距离越近，UDP 延迟越低。建议选择“低延迟”、“高速”节点进行测试，并尽量避开网络拥堵时段使用。</p>
+<h3 data-start="2164" data-end="2182" class="">2. 开启 DNS 优化功能</h3>
+<p data-start="2184" data-end="2218" class="">在设置中启用“<strong data-start="2191" data-end="2204">启用自定义 DNS</strong>”，并选用如下公共 DNS：</p>
+<ul data-start="2220" data-end="2293">
+<li data-start="2220" data-end="2243" class="" style="">
+<p data-start="2222" data-end="2243" class="">8.8.8.8（Google DNS）</p>
+</li>
+<li data-start="2244" data-end="2271" class="" style="">
+<p data-start="2246" data-end="2271" class="">1.1.1.1（Cloudflare DNS）</p>
+</li>
+<li data-start="2272" data-end="2293" class="" style="">
+<p data-start="2274" data-end="2293" class="">223.5.5.5（阿里 DNS）</p>
+</li>
+</ul>
+<p data-start="2295" data-end="2335" class="">若 DNS 请求走代理通道，可开启“<strong data-start="2313" data-end="2326">代理 DNS 请求</strong>”以防止本地泄漏。</p>
+<h3 data-start="2337" data-end="2352" class="">3. 合理使用规则分流</h3>
+<p data-start="2354" data-end="2402" class="">为避免不必要的 UDP 数据进入代理，建议使用规则分流功能，明确哪些应用走代理、哪些直连。比如：</p>
+<ul data-start="2404" data-end="2443">
+<li data-start="2404" data-end="2423" class="" style="">
+<p data-start="2406" data-end="2423" class="">游戏类应用统一走 UDP 节点</p>
+</li>
+<li data-start="2424" data-end="2443" class="" style="">
+<p data-start="2426" data-end="2443" class="">日常应用如微博、微信等使用直连策略</p>
+</li>
+</ul>
+<p data-start="2445" data-end="2482" class="">可在配置中使用 Surge 语法或 Quantumult 规则，按需制定。</p>
+<hr data-start="2484" data-end="2487" class="" style="">
+<h2 data-start="2489" data-end="2500" class="">常见问题 FAQ</h2>
+<p data-start="2502" data-end="2584" class=""><strong data-start="2502" data-end="2527">Q1：为什么配置完 UDP 仍然无法连接？</strong><br data-start="2527" data-end="2530">
+A：可能由于服务端未启用 UDP 转发，或者被防火墙拦截，建议联系服务提供商确认服务器配置是否支持 UDP。</p>
+<p data-start="2586" data-end="2687" class=""><strong data-start="2586" data-end="2623">Q2：Shadowrocket 支持 TCP/UDP 混合代理吗？</strong><br data-start="2623" data-end="2626">
+A：支持。你可以配置不同节点分别处理 TCP 和 UDP，也可以选用混合协议（如 ShadowsocksR）进行统一传输。</p>
+<p data-start="2689" data-end="2781" class=""><strong data-start="2689" data-end="2715">Q3：UDP 为什么比 TCP 更适合游戏？</strong><br data-start="2715" data-end="2718">
+A：因为 UDP 没有确认机制，数据实时送达即可，丢包不会重传，反而减少延迟。而 TCP 会因重传机制在高丢包环境下表现更差。</p>
+<hr data-start="2783" data-end="2786" class="" style="">
+<h2 data-start="2788" data-end="2796" class="">总结与点评</h2>
+<p data-start="2798" data-end="2955" class="">通过本文的全面解析，你应已掌握 Shadowrocket 中 UDP 设置的全过程。从协议原理入手，到配置实操，再到性能优化与常见问题处理，每一步都力求详细、实用。可以说，Shadowrocket 不仅是一款科学上网工具，更是掌控网络体验的利器。其对 UDP 支持的灵活性与完整性，使其在移动端代理工具中脱颖而出。</p>
+<blockquote data-start="2957" data-end="3097">
+<p data-start="2959" data-end="3097" class=""><strong data-start="2959" data-end="2965">点评</strong>：这篇分享如同一份实战指南，不仅讲清楚了“如何做”，更讲明白了“为什么做”，是技术类博客中难得兼具可操作性与系统思维的优质内容。语言准确、逻辑清晰、细节到位，适合对 Shadowrocket 有实际需求的用户收藏阅读，也值得技术博主们参考其结构化叙述方式进行创作。</p>
+</blockquote>
+<p data-start="3099" data-end="3129" class="">是否还想了解 TCP 与 UDP 混合代理的进一步设置技巧？</p>                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-112688.htm">全面解析Shadowrocket搭梯子攻略：从安装到进阶配置的终极指南</a></p>
+                                    </div>
+                                </div>
+                <div class="col-md-3">
+                    <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-102087.htm" title="深入解析澳洲Clash价格波动与购买渠道全攻略">深入解析澳洲Clash价格波动与购买渠道全攻略</a></li>
+                        <li class="py-2"><a href="/news/article-104650.htm" title="斐讯路由器官改V2Ray完整设置指南">斐讯路由器官改V2Ray完整设置指南</a></li>
+                        <li class="py-2"><a href="/news/article-100684.htm" title="科学上网工具SSR号分享与使用全面指南">科学上网工具SSR号分享与使用全面指南</a></li>
+                        <li class="py-2"><a href="/news/article-112340.htm" title="电脑端Shadowrocket使用教程：如何通过代理保护隐私并提高网络安全">电脑端Shadowrocket使用教程：如何通过代理保护隐私并提高网络安全</a></li>
+                        <li class="py-2"><a href="/news/article-101297.htm" title="解锁鸿蒙网络新体验：Clash工具全流程配置与使用指南">解锁鸿蒙网络新体验：Clash工具全流程配置与使用指南</a></li>
+                        <li class="py-2"><a href="/news/article-111983.htm" title="使用Quantumult X自动化京东签到的完全指南">使用Quantumult X自动化京东签到的完全指南</a></li>
+                        <li class="py-2"><a href="/news/article-110509.htm" title="如何在Twitter上使用Clash的全面指南">如何在Twitter上使用Clash的全面指南</a></li>
+                        <li class="py-2"><a href="/news/article-100685.htm" title="如何下载并使用 Shadowrocket：详细步骤与配置指南">如何下载并使用 Shadowrocket：详细步骤与配置指南</a></li>
+                        <li class="py-2"><a href="/news/article-112690.htm" title="深入掌握 Shadowrocket：详解 UDP 设置与优化全攻略">深入掌握 Shadowrocket：详解 UDP 设置与优化全攻略</a></li>
+                        <li class="py-2"><a href="/news/article-99953.htm" title="安卓WiFi改DNS实现科学上网的详细攻略">安卓WiFi改DNS实现科学上网的详细攻略</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">14</span> <a href="/date/2025-05/" title="2025-05 归档">2025-05</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">24</span> <a href="/date/2025-04/" title="2025-04 归档">2025-04</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+        <!--====== FOOTER PART START ======-->
+    <section class="footer-area footer-dark">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="copyright text-center mt-35">
+                                            <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                        <p class="text">
+                            节点免费订阅官网 版权所有 Powered by WordPress
+                        </p>
+                    </div> <!--  copyright -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+    <!--====== FOOTER PART ENDS ======-->
+    <!--====== BACK TOP TOP PART START ======-->
+    <a href="#" class="back-to-top"><i class="lni lni-chevron-up"></i></a>
+    <!--====== BACK TOP TOP PART ENDS ======-->
+    <!--====== Jquery js ======-->
+    <script src="/assets/website/js/frontend/clashnyanpasu/vendor/jquery-1.12.4.min.js"></script>
+    <script src="/assets/website/js/frontend/clashnyanpasu/vendor/modernizr-3.7.1.min.js"></script>
+    <!--====== Bootstrap js ======-->
+    <script src="/assets/website/js/frontend/clashnyanpasu/popper.min.js"></script>
+    <script src="/assets/website/js/frontend/clashnyanpasu/bootstrap.min.js"></script>
+    <script src="/assets/website/js/frontend/clashnyanpasu/slick.min.js"></script>
+    <script src="/assets/website/js/frontend/clashnyanpasu/jquery.magnific-popup.min.js"></script>
+    <script src="/assets/website/js/frontend/clashnyanpasu/ajax-contact.js"></script>
+    <!--====== Isotope js ======-->
+    <script src="/assets/website/js/frontend/clashnyanpasu/imagesloaded.pkgd.min.js"></script>
+    <script src="/assets/website/js/frontend/clashnyanpasu/isotope.pkgd.min.js"></script>
+    <!--====== Scrolling Nav js ======-->
+    <script src="/assets/website/js/frontend/clashnyanpasu/jquery.easing.min.js"></script>
+    <script src="/assets/website/js/frontend/clashnyanpasu/scrolling-nav.js"></script>
+    <!--====== Main js ======-->
+    <script src="/assets/website/js/frontend/clashnyanpasu/main.js"></script>
+    <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script><script src="/assets/website/js/frontend/G.js"></script>
+</body>
+
+</html>

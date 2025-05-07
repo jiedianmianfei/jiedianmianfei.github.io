@@ -1,4 +1,4 @@
-# 节点免费 | 5月2日21.3M/S|免费V2ray/Clash/SSR/Shadowrocket订阅机场  更新时间 2025-05-02 09:33:33
+# 节点免费 | 5月7日22.3M/S|免费Shadowrocket/Clash/SSR/V2ray订阅机场  更新时间 2025-05-07 09:08:08
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://jiedianmianfei.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### Clash订阅链接
 
-- https://jiedianmianfei.github.io/uploads/2025/05/0-20250502.yaml
-- https://jiedianmianfei.github.io/uploads/2025/05/1-20250502.yaml
-- https://jiedianmianfei.github.io/uploads/2025/05/2-20250502.yaml
-- https://jiedianmianfei.github.io/uploads/2025/05/3-20250502.yaml
-- https://jiedianmianfei.github.io/uploads/2025/05/4-20250502.yaml
+- https://jiedianmianfei.github.io/uploads/2025/05/0-20250507.yaml
+- https://jiedianmianfei.github.io/uploads/2025/05/1-20250507.yaml
+- https://jiedianmianfei.github.io/uploads/2025/05/2-20250507.yaml
+- https://jiedianmianfei.github.io/uploads/2025/05/3-20250507.yaml
+- https://jiedianmianfei.github.io/uploads/2025/05/4-20250507.yaml
 
 ### V2ray订阅链接
 
-- https://jiedianmianfei.github.io/uploads/2025/05/0-20250502.txt
-- https://jiedianmianfei.github.io/uploads/2025/05/1-20250502.txt
-- https://jiedianmianfei.github.io/uploads/2025/05/2-20250502.txt
-- https://jiedianmianfei.github.io/uploads/2025/05/3-20250502.txt
-- https://jiedianmianfei.github.io/uploads/2025/05/4-20250502.txt
+- https://jiedianmianfei.github.io/uploads/2025/05/0-20250507.txt
+- https://jiedianmianfei.github.io/uploads/2025/05/1-20250507.txt
+- https://jiedianmianfei.github.io/uploads/2025/05/2-20250507.txt
+- https://jiedianmianfei.github.io/uploads/2025/05/3-20250507.txt
+- https://jiedianmianfei.github.io/uploads/2025/05/4-20250507.txt
 
 ### Sing-box订阅链接
 
-- https://jiedianmianfei.github.io/uploads/2025/05/20250502.json
+- https://jiedianmianfei.github.io/uploads/2025/05/20250507.json
 
 ## 更多clash节点订阅 ：
 
