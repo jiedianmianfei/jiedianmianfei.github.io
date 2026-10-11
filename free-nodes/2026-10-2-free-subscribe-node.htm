@@ -358,24 +358,9 @@ Clash在多并发连接及大规模代理请求场景中表现稳定，连接速
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>WinXray 是否支持多订阅源？</h5></div>
+    <div class="panel-heading"><h5>如何检测并处理订阅中的死节点？</h5></div>
     <div class="panel-body">
-        支持。用户可导入多个订阅 URL，每个订阅源独立管理。通过切换订阅源或合并策略组，可灵活管理节点，实现不同地区或用途的线路分配。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>WinXray 节点延迟检测如何优化视频访问？</h5></div>
-    <div class="panel-body">
-        WinXray 定期测速节点延迟和丢包率，并结合策略组自动选择最佳节点。保证视频流量通过低延迟节点，减少缓冲和卡顿，提高播放流畅度和网络体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>VMess 的 gRPC 传输适合移动网络吗？</h5></div>
-    <div class="panel-body">
-        gRPC 传输支持长连接和多路复用，减少握手次数，降低延迟。对于移动网络和高延迟环境，它能提供稳定和高速的访问体验，同时降低掉线和延迟波动风险。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>如何为 Trojan 配置 ALPN 与 SNI 提升伪装效果？</h5></div>
-    <div class="panel-body">
-        在服务器与客户端配置中设置合适的 SNI（伪装域名）并启用 ALPN（例如 http/1.1），确保 TLS 握手时使用常见的应用层协议标识，从而增加流量与普通 HTTPS 的相似度，降低被检测概率。<hr />    </div>
+        定期运行批量测速脚本或使用客户端内置的 url-test、health-check 功能，自动标记或移除响应超时或重连失败的节点。结合订阅更新策略可自动替换或提醒用户维护节点列表。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>V2Ray QUIC 传输适合什么网络环境？</h5></div>
@@ -383,14 +368,9 @@ Clash在多并发连接及大规模代理请求场景中表现稳定，连接速
         QUIC 基于 UDP 支持多路复用和零握手，降低延迟，提高吞吐量。适合高丢包、不稳定网络环境，可保证视频、游戏和即时通讯流量的稳定性和流畅体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>如何检测并处理订阅中的死节点？</h5></div>
+    <div class="panel-heading"><h5>Hiddify Next 的 Web 面板有什么用途？</h5></div>
     <div class="panel-body">
-        定期运行批量测速脚本或使用客户端内置的 url-test、health-check 功能，自动标记或移除响应超时或重连失败的节点。结合订阅更新策略可自动替换或提醒用户维护节点列表。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Hysteria2 的 QUIC 多路复用在游戏中有什么优势？</h5></div>
-    <div class="panel-body">
-        QUIC 多路复用减少握手次数和延迟，适合高频短连接场景，如游戏和即时通讯。它能提高吞吐量和连接稳定性，在高丢包或高延迟环境下保持低延迟网络体验。<hr />    </div>
+        Hiddify Next 自带 Web 管理面板，管理员可通过浏览器管理用户、监控流量、生成订阅链接并部署节点。无需命令行操作，极大提高管理效率。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Sing-box 如何实现端口与流量的精确分流？</h5></div>
@@ -398,14 +378,34 @@ Clash在多并发连接及大规模代理请求场景中表现稳定，连接速
         Sing-box 支持按端口匹配流量，将不同类型应用的流量分配到指定节点。结合策略组使用，可提高访问速度和网络稳定性，实现精准分流和优化用户体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>如何为 Trojan 配置 ALPN 与 SNI 提升伪装效果？</h5></div>
+    <div class="panel-body">
+        在服务器与客户端配置中设置合适的 SNI（伪装域名）并启用 ALPN（例如 http/1.1），确保 TLS 握手时使用常见的应用层协议标识，从而增加流量与普通 HTTPS 的相似度，降低被检测概率。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Hysteria2 的 QUIC 多路复用在游戏中有什么优势？</h5></div>
+    <div class="panel-body">
+        QUIC 多路复用减少握手次数和延迟，适合高频短连接场景，如游戏和即时通讯。它能提高吞吐量和连接稳定性，在高丢包或高延迟环境下保持低延迟网络体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>WinXray 节点延迟检测如何优化视频访问？</h5></div>
+    <div class="panel-body">
+        WinXray 定期测速节点延迟和丢包率，并结合策略组自动选择最佳节点。保证视频流量通过低延迟节点，减少缓冲和卡顿，提高播放流畅度和网络体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>QuantumultX 的重写规则能做什么？</h5></div>
     <div class="panel-body">
         重写（Rewrite）可用于修改请求头、屏蔽广告、替换响应内容等。通过正则匹配目标请求可实现页面定制与功能增强，但应谨慎使用以避免影响正常网站加载与安全验证。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Hiddify Next 的 Web 面板有什么用途？</h5></div>
+    <div class="panel-heading"><h5>VMess 的 gRPC 传输适合移动网络吗？</h5></div>
     <div class="panel-body">
-        Hiddify Next 自带 Web 管理面板，管理员可通过浏览器管理用户、监控流量、生成订阅链接并部署节点。无需命令行操作，极大提高管理效率。    </div>
+        gRPC 传输支持长连接和多路复用，减少握手次数，降低延迟。对于移动网络和高延迟环境，它能提供稳定和高速的访问体验，同时降低掉线和延迟波动风险。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>WinXray 是否支持多订阅源？</h5></div>
+    <div class="panel-body">
+        支持。用户可导入多个订阅 URL，每个订阅源独立管理。通过切换订阅源或合并策略组，可灵活管理节点，实现不同地区或用途的线路分配。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -453,16 +453,16 @@ Clash在多并发连接及大规模代理请求场景中表现稳定，连接速
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-10-4-free-node-subscribe.htm" title="节点免费 | 10月4日21M/S|免费SSR节点/V2ray节点/Clash节点/Singbox节点/Trojan节点/Shadowrocket节点订阅机场">节点免费 | 10月4日21M/S|免费SSR节点/V2ray节点/Clash节点/Singbox节点/Trojan节点/Shadowrocket节点订阅机场</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-28-vless-node-share.htm" title="节点免费 | 9月28日19.3M/S|免费SSR节点/Trojan节点/V2ray节点/Clash节点/Shadowrocket节点/Singbox节点订阅机场">节点免费 | 9月28日19.3M/S|免费SSR节点/Trojan节点/V2ray节点/Clash节点/Shadowrocket节点/Singbox节点订阅机场</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/today-vless-node-2026-9-21.htm" title="节点免费 | 9月21日19.9M/S|免费Clash节点/Singbox节点/Trojan节点/SSR节点/Shadowrocket节点/V2ray节点订阅机场">节点免费 | 9月21日19.9M/S|免费Clash节点/Singbox节点/Trojan节点/SSR节点/Shadowrocket节点/V2ray节点订阅机场</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-16-latest-vless-node.htm" title="节点免费 | 9月16日19.3M/S|免费Trojan节点/Singbox节点/SSR节点/V2ray节点/Shadowrocket节点/Clash节点订阅机场">节点免费 | 9月16日19.3M/S|免费Trojan节点/Singbox节点/SSR节点/V2ray节点/Shadowrocket节点/Clash节点订阅机场</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/today-vless-node-2026-9-5.htm" title="节点免费 | 9月5日21.9M/S|免费Clash节点/Trojan节点/SSR节点/V2ray节点/Shadowrocket节点/Singbox节点订阅机场">节点免费 | 9月5日21.9M/S|免费Clash节点/Trojan节点/SSR节点/V2ray节点/Shadowrocket节点/Singbox节点订阅机场</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/today-vless-node-2026-10-1.htm" title="节点免费 | 10月1日18.2M/S|免费Trojan节点/Singbox节点/Clash节点/Shadowrocket节点/SSR节点/V2ray节点订阅机场">节点免费 | 10月1日18.2M/S|免费Trojan节点/Singbox节点/Clash节点/Shadowrocket节点/SSR节点/V2ray节点订阅机场</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-22-vless-node-share.htm" title="节点免费 | 9月22日18.2M/S|免费Singbox节点/Trojan节点/Shadowrocket节点/Clash节点/SSR节点/V2ray节点订阅机场">节点免费 | 9月22日18.2M/S|免费Singbox节点/Trojan节点/Shadowrocket节点/Clash节点/SSR节点/V2ray节点订阅机场</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/today-vless-node-2026-10-3.htm" title="节点免费 | 10月3日19M/S|免费Clash节点/Trojan节点/Shadowrocket节点/V2ray节点/Singbox节点/SSR节点订阅机场">节点免费 | 10月3日19M/S|免费Clash节点/Trojan节点/Shadowrocket节点/V2ray节点/Singbox节点/SSR节点订阅机场</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/vless-node-2026-9-23.htm" title="节点免费 | 9月23日18.1M/S|免费SSR节点/V2ray节点/Trojan节点/Singbox节点/Clash节点/Shadowrocket节点订阅机场">节点免费 | 9月23日18.1M/S|免费SSR节点/V2ray节点/Trojan节点/Singbox节点/Clash节点/Shadowrocket节点订阅机场</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-26-latest-vless-node.htm" title="节点免费 | 9月26日21.3M/S|免费V2ray节点/Shadowrocket节点/SSR节点/Trojan节点/Singbox节点/Clash节点订阅机场">节点免费 | 9月26日21.3M/S|免费V2ray节点/Shadowrocket节点/SSR节点/Trojan节点/Singbox节点/Clash节点订阅机场</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-vless-node-2026-9-15.htm" title="节点免费 | 9月15日20.8M/S|免费Clash节点/Singbox节点/Trojan节点/SSR节点/Shadowrocket节点/V2ray节点订阅机场">节点免费 | 9月15日20.8M/S|免费Clash节点/Singbox节点/Trojan节点/SSR节点/Shadowrocket节点/V2ray节点订阅机场</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-28-vless-node-share.htm" title="节点免费 | 9月28日19.3M/S|免费SSR节点/Trojan节点/V2ray节点/Clash节点/Shadowrocket节点/Singbox节点订阅机场">节点免费 | 9月28日19.3M/S|免费SSR节点/Trojan节点/V2ray节点/Clash节点/Shadowrocket节点/Singbox节点订阅机场</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-12-node-share.htm" title="节点免费 | 9月12日20.1M/S|免费SSR节点/Clash节点/Shadowrocket节点/Singbox节点/V2ray节点/Trojan节点订阅机场">节点免费 | 9月12日20.1M/S|免费SSR节点/Clash节点/Shadowrocket节点/Singbox节点/V2ray节点/Trojan节点订阅机场</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/2026-9-8-vless-node-github.htm" title="节点免费 | 9月8日21.5M/S|免费SSR节点/V2ray节点/Singbox节点/Trojan节点/Shadowrocket节点/Clash节点订阅机场">节点免费 | 9月8日21.5M/S|免费SSR节点/V2ray节点/Singbox节点/Trojan节点/Shadowrocket节点/Clash节点订阅机场</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-9-27.htm" title="节点免费 | 9月27日21.4M/S|免费Shadowrocket节点/Singbox节点/Clash节点/V2ray节点/Trojan节点/SSR节点订阅机场">节点免费 | 9月27日21.4M/S|免费Shadowrocket节点/Singbox节点/Clash节点/V2ray节点/Trojan节点/SSR节点订阅机场</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-9-7.htm" title="节点免费 | 9月7日18.6M/S|免费Shadowrocket节点/V2ray节点/Singbox节点/SSR节点/Clash节点/Trojan节点订阅机场">节点免费 | 9月7日18.6M/S|免费Shadowrocket节点/V2ray节点/Singbox节点/SSR节点/Clash节点/Trojan节点订阅机场</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-14-free-node-subscribe.htm" title="节点免费 | 9月14日20.9M/S|免费Singbox节点/SSR节点/Shadowrocket节点/Trojan节点/Clash节点/V2ray节点订阅机场">节点免费 | 9月14日20.9M/S|免费Singbox节点/SSR节点/Shadowrocket节点/Trojan节点/Clash节点/V2ray节点订阅机场</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-22-vless-node-share.htm" title="节点免费 | 9月22日18.2M/S|免费Singbox节点/Trojan节点/Shadowrocket节点/Clash节点/SSR节点/V2ray节点订阅机场">节点免费 | 9月22日18.2M/S|免费Singbox节点/Trojan节点/Shadowrocket节点/Clash节点/SSR节点/V2ray节点订阅机场</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -474,7 +474,7 @@ Clash在多并发连接及大规模代理请求场景中表现稳定，连接速
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">4</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
+                <h4><span class="badge" style="float: right;">11</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">29</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
