@@ -179,39 +179,9 @@
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>WinXray 如何导入订阅？</h5></div>
-    <div class="panel-body">
-        在 WinXray 界面中点击“导入订阅”选项，将机场提供的订阅链接粘贴进去。点击更新后，WinXray 会自动下载节点配置并生成列表，用户可手动选择或自动切换延迟最低的节点使用。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>Surfboard 可以结合规则实现广告屏蔽吗？</h5></div>
     <div class="panel-body">
         可以。Surfboard 支持通过规则文件匹配广告域名或 URL，将其阻断或重定向。结合策略组定期更新规则，可以实现自动广告屏蔽，提升网页浏览体验并节省带宽。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Clash 的规则订阅更新频率如何设置？</h5></div>
-    <div class="panel-body">
-        Clash 支持设置订阅规则的更新频率，例如每小时或每天。定期更新可保证节点和规则最新，减少手动维护，提高访问速度和分流效率，同时保持网络稳定性。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Hiddify Next 如何为不同用户设置流量限制？</h5></div>
-    <div class="panel-body">
-        管理员可为每个用户设置独立带宽限制和流量配额。超过限制时，可自动降速或阻止访问，确保服务器资源合理分配，避免单用户占用过多带宽，提升整体网络效率和公平性。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Clash 支持多配置文件加载吗？</h5></div>
-    <div class="panel-body">
-        Clash 支持多配置切换，用户可在图形界面中导入多个 YAML 文件，并通过选择不同配置快速切换使用场景。例如家用模式、移动模式或公司网络模式。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>当 V2Ray 报错 inbound 没有监听，可能是哪些配置问题？</h5></div>
-    <div class="panel-body">
-        检查 inbound 配置是否包含正确的 port、protocol 与 listen 字段；确认没有端口冲突或权限问题（非 root 绑定 1024 以下端口会失败）；查看日志中具体错误信息并根据提示修复配置。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Mellow 如何通过配置实现多出口分流？</h5></div>
-    <div class="panel-body">
-        Mellow 可在配置文件中定义多个 outbound，并结合 routing 规则实现按域名、IP 或策略组分流。这样不同类型的流量可走不同节点，提高使用体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Potatso Lite 手动节点选择有什么好处？</h5></div>
@@ -219,14 +189,44 @@
         手动选择节点可以让用户根据网络延迟和需求选择最优节点。适合节点不稳定或特定访问需求，灵活调整流量走向，提高访问速度和网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>当 V2Ray 报错 inbound 没有监听，可能是哪些配置问题？</h5></div>
+    <div class="panel-body">
+        检查 inbound 配置是否包含正确的 port、protocol 与 listen 字段；确认没有端口冲突或权限问题（非 root 绑定 1024 以下端口会失败）；查看日志中具体错误信息并根据提示修复配置。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Hiddify Next 如何为不同用户设置流量限制？</h5></div>
+    <div class="panel-body">
+        管理员可为每个用户设置独立带宽限制和流量配额。超过限制时，可自动降速或阻止访问，确保服务器资源合理分配，避免单用户占用过多带宽，提升整体网络效率和公平性。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>Hysteria2 的多路复用在短连接场景下有什么优势？</h5></div>
     <div class="panel-body">
         多路复用允许多个短连接共享同一通道，减少握手延迟和资源消耗。适合高频短连接应用，如游戏和即时通讯，能提高吞吐量和连接稳定性，优化网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>Clash 支持多配置文件加载吗？</h5></div>
+    <div class="panel-body">
+        Clash 支持多配置切换，用户可在图形界面中导入多个 YAML 文件，并通过选择不同配置快速切换使用场景。例如家用模式、移动模式或公司网络模式。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>WinXray 如何导入订阅？</h5></div>
+    <div class="panel-body">
+        在 WinXray 界面中点击“导入订阅”选项，将机场提供的订阅链接粘贴进去。点击更新后，WinXray 会自动下载节点配置并生成列表，用户可手动选择或自动切换延迟最低的节点使用。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Mellow 如何通过配置实现多出口分流？</h5></div>
+    <div class="panel-body">
+        Mellow 可在配置文件中定义多个 outbound，并结合 routing 规则实现按域名、IP 或策略组分流。这样不同类型的流量可走不同节点，提高使用体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>SSR 协议的多路复用功能如何提升性能？</h5></div>
     <div class="panel-body">
-        SSR 多路复用允许多个短连接共享同一通道，减少握手次数和加密开销。适合游戏、即时通讯等高频短连接场景，提升网络吞吐量和连接稳定性，提高整体上网体验。    </div>
+        SSR 多路复用允许多个短连接共享同一通道，减少握手次数和加密开销。适合游戏、即时通讯等高频短连接场景，提升网络吞吐量和连接稳定性，提高整体上网体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Clash 的规则订阅更新频率如何设置？</h5></div>
+    <div class="panel-body">
+        Clash 支持设置订阅规则的更新频率，例如每小时或每天。定期更新可保证节点和规则最新，减少手动维护，提高访问速度和分流效率，同时保持网络稳定性。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -274,16 +274,16 @@
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-9-25.htm" title="节点免费 | 9月25日20.2M/S|免费Shadowrocket节点/Clash节点/Singbox节点/SSR节点/V2ray节点/Trojan节点订阅机场">节点免费 | 9月25日20.2M/S|免费Shadowrocket节点/Clash节点/Singbox节点/SSR节点/V2ray节点/Trojan节点订阅机场</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-10-22-vless-windows.htm" title="节点免费 | 10月22日21.3M/S|免费SSR节点/V2ray节点/Clash节点/Singbox节点/Shadowrocket节点/Trojan节点订阅机场">节点免费 | 10月22日21.3M/S|免费SSR节点/V2ray节点/Clash节点/Singbox节点/Shadowrocket节点/Trojan节点订阅机场</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-18-node-share.htm" title="节点免费 | 9月18日21.2M/S|免费V2ray节点/Clash节点/Shadowrocket节点/Trojan节点/Singbox节点/SSR节点订阅机场">节点免费 | 9月18日21.2M/S|免费V2ray节点/Clash节点/Shadowrocket节点/Trojan节点/Singbox节点/SSR节点订阅机场</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/today-vless-node-2026-10-29.htm" title="节点免费 | 10月29日19M/S|免费SSR节点/Shadowrocket节点/Trojan节点/Singbox节点/V2ray节点/Clash节点订阅机场">节点免费 | 10月29日19M/S|免费SSR节点/Shadowrocket节点/Trojan节点/Singbox节点/V2ray节点/Clash节点订阅机场</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-10-27.htm" title="节点免费 | 10月27日21.8M/S|免费Trojan节点/Singbox节点/Clash节点/Shadowrocket节点/V2ray节点/SSR节点订阅机场">节点免费 | 10月27日21.8M/S|免费Trojan节点/Singbox节点/Clash节点/Shadowrocket节点/V2ray节点/SSR节点订阅机场</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/today-vless-node-2026-10-19.htm" title="节点免费 | 10月19日20.3M/S|免费Clash节点/SSR节点/Shadowrocket节点/Singbox节点/Trojan节点/V2ray节点订阅机场">节点免费 | 10月19日20.3M/S|免费Clash节点/SSR节点/Shadowrocket节点/Singbox节点/Trojan节点/V2ray节点订阅机场</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-10-10-free-subscribe-node.htm" title="节点免费 | 10月10日20.8M/S|免费Trojan节点/V2ray节点/Singbox节点/SSR节点/Shadowrocket节点/Clash节点订阅机场">节点免费 | 10月10日20.8M/S|免费Trojan节点/V2ray节点/Singbox节点/SSR节点/Shadowrocket节点/Clash节点订阅机场</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/today-vless-node-2026-10-23.htm" title="节点免费 | 10月23日20.3M/S|免费Trojan节点/V2ray节点/SSR节点/Shadowrocket节点/Singbox节点/Clash节点订阅机场">节点免费 | 10月23日20.3M/S|免费Trojan节点/V2ray节点/SSR节点/Shadowrocket节点/Singbox节点/Clash节点订阅机场</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-10-14-vless-windows.htm" title="节点免费 | 10月14日20.3M/S|免费Clash节点/SSR节点/Trojan节点/V2ray节点/Singbox节点/Shadowrocket节点订阅机场">节点免费 | 10月14日20.3M/S|免费Clash节点/SSR节点/Trojan节点/V2ray节点/Singbox节点/Shadowrocket节点订阅机场</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/2026-10-18-node-share.htm" title="节点免费 | 10月18日21.1M/S|免费Trojan节点/Clash节点/Singbox节点/V2ray节点/SSR节点/Shadowrocket节点订阅机场">节点免费 | 10月18日21.1M/S|免费Trojan节点/Clash节点/Singbox节点/V2ray节点/SSR节点/Shadowrocket节点订阅机场</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-9-9.htm" title="节点免费 | 9月9日20.2M/S|免费V2ray节点/Trojan节点/Clash节点/Shadowrocket节点/Singbox节点/SSR节点订阅机场">节点免费 | 9月9日20.2M/S|免费V2ray节点/Trojan节点/Clash节点/Shadowrocket节点/Singbox节点/SSR节点订阅机场</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-28-vless-node-share.htm" title="节点免费 | 9月28日19.3M/S|免费SSR节点/Trojan节点/V2ray节点/Clash节点/Shadowrocket节点/Singbox节点订阅机场">节点免费 | 9月28日19.3M/S|免费SSR节点/Trojan节点/V2ray节点/Clash节点/Shadowrocket节点/Singbox节点订阅机场</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-10-2-free-subscribe-node.htm" title="节点免费 | 10月2日21.6M/S|免费V2ray节点/Clash节点/Shadowrocket节点/Singbox节点/Trojan节点/SSR节点订阅机场">节点免费 | 10月2日21.6M/S|免费V2ray节点/Clash节点/Shadowrocket节点/Singbox节点/Trojan节点/SSR节点订阅机场</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-2-latest-vless-node.htm" title="节点免费 | 9月2日20.2M/S|免费Trojan节点/V2ray节点/Clash节点/Singbox节点/Shadowrocket节点/SSR节点订阅机场">节点免费 | 9月2日20.2M/S|免费Trojan节点/V2ray节点/Clash节点/Singbox节点/Shadowrocket节点/SSR节点订阅机场</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-4-vless-windows.htm" title="节点免费 | 9月4日18.7M/S|免费Shadowrocket节点/Clash节点/V2ray节点/Trojan节点/Singbox节点/SSR节点订阅机场">节点免费 | 9月4日18.7M/S|免费Shadowrocket节点/Clash节点/V2ray节点/Trojan节点/Singbox节点/SSR节点订阅机场</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/vless-node-2026-9-19.htm" title="节点免费 | 9月19日19.3M/S|免费Clash节点/V2ray节点/Singbox节点/SSR节点/Trojan节点/Shadowrocket节点订阅机场">节点免费 | 9月19日19.3M/S|免费Clash节点/V2ray节点/Singbox节点/SSR节点/Trojan节点/Shadowrocket节点订阅机场</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-10-17.htm" title="节点免费 | 10月17日20.9M/S|免费Shadowrocket节点/Trojan节点/V2ray节点/Singbox节点/SSR节点/Clash节点订阅机场">节点免费 | 10月17日20.9M/S|免费Shadowrocket节点/Trojan节点/V2ray节点/Singbox节点/SSR节点/Clash节点订阅机场</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/vless-github-2026-10-13.htm" title="节点免费 | 10月13日20.7M/S|免费Clash节点/Trojan节点/Singbox节点/Shadowrocket节点/V2ray节点/SSR节点订阅机场">节点免费 | 10月13日20.7M/S|免费Clash节点/Trojan节点/Singbox节点/Shadowrocket节点/V2ray节点/SSR节点订阅机场</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/today-vless-node-2026-11-9.htm" title="节点免费 | 11月9日21.3M/S|免费V2ray节点/Singbox节点/SSR节点/Shadowrocket节点/Clash节点/Trojan节点订阅机场">节点免费 | 11月9日21.3M/S|免费V2ray节点/Singbox节点/SSR节点/Shadowrocket节点/Clash节点/Trojan节点订阅机场</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -295,13 +295,10 @@
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">2</span> <a href="/date/2026-11/" title="2026-11 归档">2026-11</a></h4>
+                <h4><span class="badge" style="float: right;">9</span> <a href="/date/2026-11/" title="2026-11 归档">2026-11</a></h4>
             </li>
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">30</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
-            </li>
-                        <li class="py-2">
-                <h4><span class="badge" style="float: right;">29</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
+                <h4><span class="badge" style="float: right;">21</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
             </li>
                     </ul>
     </div>
